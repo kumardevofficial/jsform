@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="maincontainer"> 
+            <form action="#">
+                <div class="row">
+                    <div class="input-text-box">
+                        <label for="firstname" class="text-beauty">First Name</label>
+                    </div>
+                    <div class="input-text-box">
+                    <input type="text" class="decor" id="firstname"  onchange="firstnamechagne()">
+                    <p id="firstname-error-message"></p>
+                    </div>
+                    <div class="input-text-box">
+                        <label for="Lastname" class="text-beauty">Last Name</label>
+                    </div>
+                    <div class="input-text-box" >
+                        <input type="text" class="decor" id="lastname" onchange="lastnamechange()">
+                        <p id="lastname-error-message"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-text-box">
+                        <label for="email" class="text-beauty">Email</label>
+                    </div>
+                    <div class="input-text-box" >
+                        <input type="Email" class="em-decor" id="email" onchange="emailchange()">
+                        <p id="email-error-message"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-text-box">
+                        <label for="Mobile" class="text-beauty">Mobile</label>
+                    </div>
+                    <div>
+                        <select name="countrycode" id="countrycode" class="text-beauty">
+                            <option value="+91">+91</option>
+                            <option value="+92">+92</option>
+                            <option value="+82">+82</option>
+                            <option value="+882">+882</option>
+                            <option value="+1">+1</option>
+                        </select>
+                    </div>
+                    <div class="input-text-box">
+                        <input type="number" class="mob-decor" id="mobileno" onchange="changemobileno()">
+                        <p id="mobile-error-message"></p>
+                    </div>
+                </div>
+                <div class="pass-row">
+                    <div class="pass-row-inside">
+                        <div class="input-text-box">
+                            <label for="Password" class="text-beauty">Password</label>
+                            <p id="password-error-message"></p>
+                        </div>
+                        <div class="input-text-box">
+                            <input type="password" class="decor" id="mypassword" onchange="firstpassword()">
+                            <p id="confirmpassword-error-message"></p>
+                            
+                        </div>
+                    </div>
+
+                    <div class="pass-row-inside">
+                        <div class="input-text-box">
+                            <label for="confirmpassword" class="text-beauty">Confirm Password</label>
+                        </div>
+                        <div class="input-text-box">
+                            <input type="password" class="decor" id="confirmpassword" onchange="changepasswrod()">
+                        </div>
+                    </div>
+                </div>
+                <div class="button-row">
+                    <div class="input-text-box" >
+                        <input type="button" value="Signup" class="mybutton" onclick="checkalldetails()" >
+                    </div>
+                    <div class="input-text-box" >
+                        <input type="button" value="Login" class="mybutton">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
